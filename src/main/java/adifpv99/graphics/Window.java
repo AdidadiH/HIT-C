@@ -26,11 +26,11 @@ public class Window {
                 if (frame != null) break;
                 else Thread.sleep(10);
         } catch (InterruptedException e) {
-            IO.println("ERROR [2]: Couldn't create Window! InterruptedException: " + e.getMessage());
+            System.out.println("ERROR [2]: Couldn't create Window! InterruptedException: " + e.getMessage());
             System.exit(2);
         }
         if(frame == null){
-            IO.println("ERROR [1]: Couldn't create Window! JFrame init timed out(>10s)");
+            System.out.println("ERROR [1]: Couldn't create Window! JFrame init timed out(>10s)");
             System.exit(1);
         }
 

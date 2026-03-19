@@ -6,9 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class Main {
 
@@ -17,7 +15,7 @@ public class Main {
 
     private static String filePath = "";
 
-    static void main() {
+    public static void main(String[] args) {
         Window.Init();
 
         Window.addComponent(selectSourceBtn);
@@ -62,10 +60,10 @@ public class Main {
             process.waitFor();
 
         } catch (IOException e) {
-            IO.println("ERROR [3]: Couldn't execute a command! IOException: " + e.getMessage());
+            System.out.println("ERROR [3]: Couldn't execute a command! IOException: " + e.getMessage());
             System.exit(3);
         } catch (InterruptedException e) {
-            IO.println("ERROR [4]: Couldn't execute a command! InterruptedException: " + e.getMessage());
+            System.out.println("ERROR [4]: Couldn't execute a command! InterruptedException: " + e.getMessage());
             System.exit(4);
         }
     }
