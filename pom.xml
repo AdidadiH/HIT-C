@@ -6,7 +6,7 @@
 
     <groupId>adifpv99</groupId>
     <artifactId>HIT-C</artifactId>
-    <version>V1.0</version>
+    <version>V1.0.1</version>
 
     <properties>
         <maven.compiler.release>21</maven.compiler.release>

@@ -51,7 +51,7 @@ public class Main {
 
         try {
             ProcessBuilder processBuilder = new ProcessBuilder();
-            processBuilder.command("cmd.exe", "/c", "start", "/wait", "cmd.exe", "/c", "\"echo Compiling: && gcc " + filePath + " -o .\\program.exe && cls && .\\program.exe & pause\"");
+            processBuilder.command("cmd.exe", "/c", "start", "/wait", "cmd.exe", "/c", "\"echo Compiling: && gcc \"" + filePath + "\" -o .\\program.exe && cls && .\\program.exe & pause\"");
 
             processBuilder.inheritIO();
 
